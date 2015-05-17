@@ -65,6 +65,14 @@ var arr:Array = _ex.nativeAndroidDM_getOnGoingJobs(); // this array has download
 
 // you can cancel a download by its URL
 //_ex.cancelByUrl("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4");
+
+function onAndroidDownloadManagerJobFinished(e:DMEvent):void
+{
+	for (var name:String in e.param) 
+	{
+		trace(name + " = " + e.param[name])
+	}
+}
 ```
 you need the following permissions and servicies:
 ```xml
