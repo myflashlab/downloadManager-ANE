@@ -48,6 +48,7 @@ you need the following permissions and activities:
 ```
 
 # USAGE (Android only)
+On Android, you can also use the built in Android Download manager if you wish (this is not supported on iOS though) The good thing about this approach on Android is that you can close your app as soon as the download begins.
 ```actionscript
 import com.doitflash.air.extensions.dm.DM;
 import com.doitflash.air.extensions.dm.DMEvent;
