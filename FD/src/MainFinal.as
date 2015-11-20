@@ -23,8 +23,8 @@ package
 	import flash.events.InvokeEvent;
 	import flash.filesystem.File;
 	
-	import com.doitflash.air.extensions.dm.DM;
-	import com.doitflash.air.extensions.dm.DMEvent;
+	import com.myflashlab.air.extensions.dm.DM;
+	import com.myflashlab.air.extensions.dm.DMEvent;
 	
 	import com.doitflash.text.modules.MySprite;
 	import com.doitflash.starling.utils.list.List;
@@ -212,7 +212,7 @@ package
 			
 			function startAndroid(e:MouseEvent):void
 			{
-				var id:int = _ex.nativeAndroidDM_start("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
+				var id:int = _ex.nativeAndroidDM_start("http://192.168.0.12/project/sarbazi.rar", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
 				C.log("download id = " + id + " - check out the download progress in your notification!");
 			}
 			
@@ -235,7 +235,7 @@ package
 			
 			function cancelByUrl(e:MouseEvent):void
 			{
-				_ex.cancelByUrl("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4");
+				_ex.cancelByUrl("http://192.168.0.12/project/sarbazi.rar");
 			}
 			
 		}

@@ -1,4 +1,4 @@
-# Download Manager ANE V3.0 (Android+iOS)
+# Download Manager ANE V3.9 (Android+iOS)
 whether you're building an Air game or an app, there are many situations where you need to download big data files into your app. using the classic APIs in AS3 won't help you because they are not resumable supported and they use only one channel to download the files. The best efficient solution to this problem is to use a fully automatic download manager native extension which lets you download big files as fast as possible by downloading the files in chunks. on top of that, you need the downloads to be resumable so you can be sure that your download won't fail on any condition. Just download our cool download manager extension for Android and focus on your app/game logic without worrying about how you should handle your data files.
 
 checkout here for the commercial version: http://myappsnippet.com/download-manager-air-native-extension/
@@ -11,8 +11,8 @@ you may like to see the ANE in action? check this out: https://github.com/myflas
 
 # USAGE (Android + iOS)
 ```actionscript
-import com.doitflash.air.extensions.dm.DM;
-import com.doitflash.air.extensions.dm.DMEvent;
+import com.myflashlab.air.extensions.dm.DM;
+import com.myflashlab.air.extensions.dm.DMEvent;
 
 var _ex:DM = new DM();
 _ex.addEventListener(DMEvent.ERROR, onError);
@@ -50,8 +50,8 @@ you need the following permissions and activities:
 # USAGE (Android only)
 On Android, you can also use the built in Android Download manager if you wish (this is not supported on iOS though) The good thing about this approach on Android is that you can close your app as soon as the download begins.
 ```actionscript
-import com.doitflash.air.extensions.dm.DM;
-import com.doitflash.air.extensions.dm.DMEvent;
+import com.myflashlab.air.extensions.dm.DM;
+import com.myflashlab.air.extensions.dm.DMEvent;
 
 var _ex:DM = new DM();
 
