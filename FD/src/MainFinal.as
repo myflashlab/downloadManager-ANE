@@ -80,7 +80,7 @@ package
 			_txt.multiline = true;
 			_txt.wordWrap = true;
 			_txt.embedFonts = false;
-			_txt.htmlText = "<font face='Arimo' color='#333333' size='20'><b>DownloadManager Extension for adobe air (Android + iOS)</b></font>";
+			_txt.htmlText = "<font face='Arimo' color='#333333' size='20'><b>DownloadManager for adobe air (Android + iOS)</b> V"+DM.VERSION+"</font>";
 			_txt.scaleX = _txt.scaleY = DeviceInfo.dpiScaleMultiplier;
 			this.addChild(_txt);
 			
@@ -145,6 +145,9 @@ package
 		
 		private function init():void
 		{
+			// required only if you are a member of the club
+			DM.clubId = "paypal-address-you-used-to-join-the-club";
+			
 			// initialize the extension
 			_ex = new DM();
 			
@@ -166,7 +169,7 @@ package
 			
 			function startDownload(e:MouseEvent):void
 			{
-				C.log("startDownload >> Please wait for the download to start...", _ex.startDownload("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "dm", "Bully_Scholarship_Edition_Trailer.mp4"));
+				C.log("startDownload >> Please wait for the download to start...", _ex.startDownload("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "dm", "Bully_Scholarship_Edition_Trailer.mp4"));
 			}
 			
 			// ----------------------
@@ -212,7 +215,7 @@ package
 			
 			function startAndroid(e:MouseEvent):void
 			{
-				var id:int = _ex.nativeAndroidDM_start("http://192.168.0.12/project/sarbazi.rar", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
+				var id:int = _ex.nativeAndroidDM_start("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
 				C.log("download id = " + id + " - check out the download progress in your notification!");
 			}
 			
@@ -235,7 +238,7 @@ package
 			
 			function cancelByUrl(e:MouseEvent):void
 			{
-				_ex.cancelByUrl("http://192.168.0.12/project/sarbazi.rar");
+				_ex.cancelByUrl("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4");
 			}
 			
 		}

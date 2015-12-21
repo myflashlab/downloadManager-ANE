@@ -1,7 +1,7 @@
-# Download Manager ANE V3.9 (Android+iOS)
+# Download Manager ANE V3.9.1 (Android+iOS)
 whether you're building an Air game or an app, there are many situations where you need to download big data files into your app. using the classic APIs in AS3 won't help you because they are not resumable supported and they use only one channel to download the files. The best efficient solution to this problem is to use a fully automatic download manager native extension which lets you download big files as fast as possible by downloading the files in chunks. on top of that, you need the downloads to be resumable so you can be sure that your download won't fail on any condition. Just download our cool download manager extension for Android and focus on your app/game logic without worrying about how you should handle your data files.
 
-checkout here for the commercial version: http://myappsnippet.com/download-manager-air-native-extension/
+checkout here for the commercial version: http://www.myflashlabs.com/product/download-manager-ane-adobe-air-native-extension/
 
 ![Download Manager ANE](http://myappsnippet.com/wp-content/uploads/2014/12/download-manager-adobe-air-extension_preview.jpg)
 
@@ -34,7 +34,7 @@ function onProgress(e:DMEvent):void
     trace(e.param.perc);
 }
 
-_ex.startDownload("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "dm", "Bully_Scholarship_Edition_Trailer.mp4");
+_ex.startDownload("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "dm", "Bully_Scholarship_Edition_Trailer.mp4");
 //_ex.stopDownload();
 //_ex.cancelDownload();
 //_ex.deleteDownloaded();
@@ -58,13 +58,13 @@ var _ex:DM = new DM();
 // add a listener to know when the download is finished. if you are closing the app while the download is in progress, obvoiusly you won't receive this event but the download task will continue.
 _ex.addEventListener(DMEvent.NATIVE_LIB_DOWNLOAD_JOB_FINISHED, onAndroidDownloadManagerJobFinished);
 
-var id:int = _ex.nativeAndroidDM_start("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
+var id:int = _ex.nativeAndroidDM_start("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4", "/dm", "", "DM ANE!", "Download Manager Air Native Extension", true);
 
 // you can check if there are any download jobs are in progress or not.
 var arr:Array = _ex.nativeAndroidDM_getOnGoingJobs(); // this array has download tasks as objects indexed which you can loop through and get more information about each ongoing download task
 
 // you can cancel a download by its URL
-//_ex.cancelByUrl("http://myflashlab.com/showcase/Bully_Scholarship_Edition_Trailer.mp4");
+//_ex.cancelByUrl("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Trailer.mp4");
 
 function onAndroidDownloadManagerJobFinished(e:DMEvent):void
 {

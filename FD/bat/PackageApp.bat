@@ -1,7 +1,11 @@
 @echo off
+
+:: Set working dir
+cd %~dp0 & cd ..
+
 set PAUSE_ERRORS=1
 call bat\SetupSDK.bat
-call bat\SetupApplication.bat
+call bat\SetupApp.bat
 
 :menu
 echo.
@@ -30,7 +34,8 @@ echo.
 set PLATFORM=android
 set OPTIONS=
 if %C% GTR 3 set PLATFORM=ios
-if %C% GTR 7 set PLATFORM=ios-dist
+if %C% GTR 7 set PLATFORM=ios-adhoc
+if %C% GTR 8 set PLATFORM=ios-dist
 
 if "%C%"=="1" set TARGET=
 if "%C%"=="2" set TARGET=-debug
