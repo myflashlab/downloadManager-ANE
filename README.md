@@ -1,6 +1,9 @@
 # Download Manager ANE V3.9.2 (Android+iOS)
 whether you're building an Air game or an app, there are many situations where you need to download big data files into your app. using the classic APIs in AS3 won't help you because they are not resumable supported and they use only one channel to download the files. The best efficient solution to this problem is to use a fully automatic download manager native extension which lets you download big files as fast as possible by downloading the files in chunks. on top of that, you need the downloads to be resumable so you can be sure that your download won't fail on any condition. Just download our cool download manager extension for Android and focus on your app/game logic without worrying about how you should handle your data files.
 
+# asdoc
+[find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/dm/package-detail.html)
+
 # Demo .apk
 you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/downloadManager-ANE/tree/master/FD/dist)
 
