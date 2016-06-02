@@ -145,9 +145,6 @@ package
 		
 		private function init():void
 		{
-			// required only if you are a member of the club
-			DM.clubId = "paypal-address-you-used-to-join-the-club";
-			
 			// initialize the extension
 			_ex = new DM();
 			

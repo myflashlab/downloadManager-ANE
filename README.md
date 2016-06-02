@@ -48,6 +48,11 @@ _ex.startDownload("http://myflashlabs.com/showcase/Bully_Scholarship_Edition_Tra
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 <activity android:name="com.doitflash.downloadManager.MyActivity" />
+
+  <!-- And implement the ANE like this -->
+  <extensions>
+    <extensionID>com.myflashlab.air.extensions.downloadManager</extensionID>
+  </extensions>
 ```
 
 # Air Usage
@@ -90,6 +95,11 @@ If you are using the Android built in download library only as described above, 
 		<action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
 	</intent-filter>
 </receiver>
+
+  <!-- And implement the ANE like this -->
+  <extensions>
+    <extensionID>com.myflashlab.air.extensions.downloadManager</extensionID>
+  </extensions>
 ```
 
 # Requirements
